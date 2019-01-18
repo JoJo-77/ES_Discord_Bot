@@ -1,5 +1,0 @@
-Here is where discussions of design decisions and general knowledge will be put as a place holder before the github readme is updated.
-
-Notes:
-Public Schedule Website:
-https://account.subitup.com/public/?5t7i0fpakJA%3d#byTimeDay
