@@ -4,7 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 chromedriver = "./chromedriver"
-output = open("out.txt","w")
+#output = open("out.txt","w")
 endofheaders = 41
 driver = webdriver.Chrome(chromedriver)
 actions = ActionChains(driver)
