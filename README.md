@@ -1,11 +1,14 @@
 # ES_Discord_Bot
 
 ## Requirements
-
+ - Download selenium package for python
+ - Download Chromedriver 
 ## Useage 
 
 ## Links
  - [Public ES Schedule](https://account.subitup.com/public/?5t7i0fpakJA%3d#byTimeDay)
+ - [Selenium](https://selenium-python.readthedocs.io/installation.html)
+ - [Chromedriver](http://chromedriver.storage.googleapis.com/index.html?path=72.0.3626.7/)
 
 ## Notes
 - The schedule data is run through scripts therefore we cannot use webscraping to pull data from the website
