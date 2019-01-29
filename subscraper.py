@@ -37,8 +37,31 @@ class Scraper:
 
 	def print_dict(self):
 		for worker in self.workerdict.keys():
-			print(worker,self.workerdict[worker])
-			print('\n')
+			#print(worker,self.workerdict[worker])
+			#print('\n')
+			self.print_worker(worker)
+
+	def sort_shifts(self):
+		ret = 0
+		shift = self.get_shift().title()
+		for worker in self.workerdict.keys():
+			for item in self.workerdict[worker]:
+				if shift in item:
+					print(worker, self.workerdict[worker])
+					ret = 1
+			else:
+				continue 
+		return ret
+
+	def print_worker(self,worker):
+		ret = (worker + ": ")
+		for shift in self.workerdict[worker]:
+			ret + shift + ", "
+		print(ret)
+
+	def get_shift(self):
+		inp = input("What shift do you want to see:\n")
+		return inp
 
 	def close(self):
 		self.driver.close()
@@ -51,6 +74,11 @@ def main():
 	scraper.scrape()
 	scraper.print_dict()
 	scraper.close()
+	retval = scraper.sort_shifts()
+	while (retval is not 0):
+		retval = scraper.sort_shifts()
+
+
 
 
 
