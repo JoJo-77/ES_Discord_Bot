@@ -17,6 +17,7 @@
 - ### Ideas
   - Support functionality for user commands or automation (or both)
   - See about exporting data to google spreadsheet if necessary
+  - Allow for arguements being passed in so it doesn't require the user to constantly enter in commands for what they want/ doesn't print unneccessary information
 - ### Implementations / Milestones
   - Created webscraper using selenium
     - correctly parses text and converts it into a dictionary of worker keys and shift values
